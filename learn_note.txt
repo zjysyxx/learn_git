@@ -46,5 +46,5 @@ git checkout -- <filename.file_suffix>
 --若文件已add到暂存区，通过reset从暂存区拿出来，恢复到add之前的状态
 git reset HEAD <file>
 
-
+--若文件已经add，但是误删，可以通过checkout找回；若文件未add，误删，只能找回add以前的最新版；
 
