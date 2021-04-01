@@ -40,8 +40,11 @@ git log
 type <FILE_NAME>
 
 
---把文件在工作区的修改删掉；若没被放到暂存区，退回到修改前；若放到暂存区，将文件从暂存区拿走；
+--把文件在工作区的修改删掉；若没被放到暂存区，删除修改内容，退回到修改前；
 git checkout -- <filename.file_suffix>
+
+--若文件已add到暂存区，通过reset从暂存区拿出来，恢复到add之前的状态
+git reset HEAD <file>
 
 
 
