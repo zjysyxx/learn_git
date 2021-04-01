@@ -56,12 +56,16 @@ git clone git@github.com:<git_account>/<repo>.git
 
 --创建并切换到分支dev
 git checkout -b dev(等价于：git branch dev	git checkout dev)
+或者
+git switch -c dev
 
 --查看当前所在分支
 git branch
 
 --dev切换到master分支
 git checkout master
+或者
+git switch master
 
 --把dev的成果合并到master上
 git checkout master
@@ -69,4 +73,8 @@ git merge dev
 
 --删除dev分支(删除时，不能再该分支上）
 git branch -d dev
+
+--创建分支
+git branch <name>
+
 
