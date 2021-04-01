@@ -1,0 +1,44 @@
+-创建git账户
+git config --global user.name "your name"
+git config --global user.email"email@example.com"
+
+--创建并切换到git所属learngit文件夹
+mkdir learngit
+cd learngit
+
+--查看当前所处文件夹路径
+chdir
+
+--把当前目录变成git可以管理的仓库
+git init
+
+--在git中添加文件到暂存区（stage/index），并创建分支master
+git add <filename1.file_suffix> <FILENAME2.FILE_SUFFIX>
+
+--把文件提交到git仓库，提交更改，把暂存区的所有内容提交到当前分支；
+git commit -m "本次提交的说明"
+
+
+
+--查看当前git是否修改及是否提交
+git status
+
+--查看版本差异
+git diff <FILE_NAME.FILE_SUFFIX>
+
+
+--版本回退
+git reset --hard <version id>
+
+--回退后，查看回退前版本
+git reflog
+
+--查看git日志（查看当前版本及之前的版本）
+git log
+
+--在cmd中查看文件内容
+type <FILE_NAME>
+
+
+
+
