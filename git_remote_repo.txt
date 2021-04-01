@@ -1,0 +1,12 @@
+1.在个人用户目录下，查找.ssh文件（没有的话，要通过GIT BASH创建）
+2.在github账户中，增加SSH KEYS，把本地.SSH文件夹中.PUB文件的key增加到github的ssh keys中；
+3.在github创建一个仓库
+4.在本地输入git remote add origin git@github.com:<github_server_name>/<repository_name>.git
+就会把本地git的信息提交到github远程库中，并且远程库的名字是origin
+5.此后，本地做了提交，就可以通过git push origin master将本地的master分支最新的修改推送到github
+
+查看远程库信息
+git remote -v
+
+删除远程库(此处只是解除了本地与远程的绑定关系，而非物理删除）
+git remote rm <name>

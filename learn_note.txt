@@ -48,3 +48,7 @@ git reset HEAD <file>
 
 --若文件已经add，但是误删，可以通过checkout找回；若文件未add，误删，只能找回add以前的最新版；
 
+
+
+--将github克隆到本地
+git clone git@github.com:<git_account>/<repo>.git
