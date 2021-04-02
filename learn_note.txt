@@ -88,4 +88,3 @@ git log --graph --pretty=oneline --abbrev-commit
 --工作到一半，出现bug，目前的任务不想提交,git stash 储藏当前的工作现场
 git stash
 
-dev change
