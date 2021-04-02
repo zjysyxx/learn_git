@@ -87,4 +87,6 @@ git log --graph --pretty=oneline --abbrev-commit
 
 --工作到一半，出现bug，目前的任务不想提交,git stash 储藏当前的工作现场
 git stash
+--然后切换到主分支、创建主分支的临时分支修复bug、修复提交合并后，回到dev用git stash pop回到工作现场
 
+--修复的bug需要合并到当前的dev分支，用git cherry-pick <commit版本>命令，即可把bug提交的修改复制到当前分支，避免重复劳动；
