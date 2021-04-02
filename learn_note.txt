@@ -78,3 +78,12 @@ git branch -d dev
 git branch <name>
 
 --合并与解决冲突：主分支和副分支分别有新的提交，会导致无法快速合并，需要处理冲突；处理冲突后，在主分支再次add修改后的文件；git log可以看到分支合并的情况；合并成功后，删除副分支即可；
+
+--强制禁用Fast forward模式的合并（注意ff模式，删除分支后，会丢掉分支信息；禁用ff模式，会在merge时新生成commit，从历史分支可以看出分支信息）
+git merge --no-ff -m "state" <un_merge_branch>
+
+--查看分支合并历史
+git log --graph --pretty=oneline --abbrev-commit
+
+--工作到一半，出现bug，目前的任务不想提交,git stash 储藏当前的工作现场
+git stash
